@@ -99,7 +99,7 @@ a {
   gap: 2rem;
   padding: 6rem 2rem 4rem;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(10, 10, 10, 0.5)),
-    url('/rcb/images/champs.jpg');
+    url('/images/champs.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

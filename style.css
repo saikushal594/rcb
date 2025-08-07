@@ -315,6 +315,7 @@ a {
   color: var(--text-muted);
   font-size: 0.95rem;
 }
+
 /*Fixtures Section*/
 .fixtures-section {
   padding: var(--section-padding);
@@ -381,6 +382,7 @@ a {
   padding: var(--section-padding);
   background-color: var(--bg-secondary);
 }
+
 .dash-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -628,6 +630,7 @@ a {
     color: var(--text-primary);
 }
 
+
 /*Shop Section*/
 .shop-section {
 	padding: var(--section-padding);
@@ -647,7 +650,7 @@ a {
 	text-align: center;
 	box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 	transition: transform 0.3s ease;
-    border: 0.1px solid lightgray;
+  border: 0.1px solid lightgray;
 }
 
 .shop-item:hover {
@@ -681,7 +684,7 @@ a {
 	border-radius: 14px;
 	font-size: 1rem;
 	font-weight: 600;
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 .off-strike{
     text-decoration: line-through;
@@ -705,14 +708,14 @@ a {
 .team-partners h2 {
 	font-size: 2rem;
 	margin-bottom: 1rem;
-    font-family: var(--font-heading);
+  font-family: var(--font-heading);
 }
 
 .partners-category h4 {
 	font-size: 1.1rem;
 	margin-top: 1rem;
 	margin-bottom: 0.5rem;
-    font-family: var(--font-heading);
+  font-family: var(--font-heading);
 }
 
 .partner-logos {
@@ -1010,13 +1013,93 @@ a {
       gap: 0.5rem;
     }
 
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
+    .tv-card video {
+      width: 100%;
+      padding: 0px;
+      height: 120px;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 0.5rem;
+    }
+    .player-name {
+      font-size: 0.8rem;
+      color: var(--text-primary);
+      font-family: var(--font-heading);
+      margin-bottom: 0.4rem;
     }
 
-    .footer-nav {
-        text-align: center;
+    .player-role {
+      color: var(--text-muted);
+      font-size: 0.5rem;
+    }
+    .fixtures-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.5rem;
+    }
+    .fixture-teams img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    .fixture-teams .vs {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .fixture-details p {
+      font-size: 0.95rem;
+      margin-bottom: 0.1rem;
+    }
+    .fixture-date {
+      font-size: 0.7rem;
+      margin-bottom: 1rem;
+    }
+    .dash-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 0.5rem;
+    }
+    .shop-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.5rem;
+    }
+    .team-partners h2 {
+      font-size: 1rem;
+    }
+
+    .partners-category h4 {
+      font-size: 1.1rem;
+    }
+    .main-partner-logos img{
+        height: 40px;
+        object-fit: contain;
+    }
+
+    .principal-partner-logos img{
+        height: 40px;
+        object-fit: contain;
+    }
+    .associate-partner-logos img{
+      height: 20px;
+      object-fit: contain;
+    }
+    .footer-nav{
+        column-count: 3;
+        gap: 0rem;
+        border-right: 1px solid lightgray;
+    }
+    .footer-nav ul {
+      list-style: none;
+      padding: 0px;
+    }
+
+    .footer-nav li {
+      font-size: 10px;
+      cursor: pointer;
     }
 }

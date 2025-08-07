@@ -1020,6 +1020,12 @@ a {
       padding: 0px;
       height: 120px;
     }
+    .tv-title {
+      margin-top: 1rem;
+      font-family: var(--font-heading);
+      color: var(--text-primary);
+      font-size: 0.8rem;
+    }
     .team-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));

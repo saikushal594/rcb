@@ -93,17 +93,13 @@ a {
 }
 /*Hero Section*/
 .hero-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  padding: 6rem 2rem 4rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(10, 10, 10, 0.5)),
-    url('/images/champs.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   margin-top: 125px;
+  position: relative;
+}
+.hero-container img{
+  width: 250%;
+  height: 800px;
+  margin: 5px auto;
 }
 
 .hero-slide {
@@ -122,130 +118,24 @@ a {
   padding: 0.5rem 1rem;
   border-radius: 0px 14px 14px 0px;
   font-family: var(--font-heading);
+  border: 0.5px solid lightgrey;
 }
 
 .slide-content h1 {
   background-color: var(--accent-color);
   color: var(--text-primary);
-  margin-bottom: 1rem;
   font-size: 30px;
   margin-top: 27rem;
-  position: static;
+  position: absolute;
+  bottom: 200px;
 }
 
 .slide-content p {
   background-color: var(--text-secondary);
   color: var(--bg-primary);
   font-size: 15px;
-  margin-bottom: 1rem;
-  position: static;
-}
-
-/*Match Card*/
-.match-card {
-  background-color: var(--bg-secondary);
-  padding: 2rem;
-  border-radius: 12px;
-  color: var(--text-primary);
-  max-width: 400px;
-  width: 100%;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-.match-date {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-.match-result {
-  font-weight: 1000;
-  color: var(--text-primary);
-  margin-bottom: 1.5rem;
-}
-
-.score-board {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1.5rem;
-}
-
-.team-score {
-  text-align: center;
-}
-
-.team-score img {
-  height: 100px;
-  margin-bottom: 0.5rem;
-}
-
-.score {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.overs {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
-.vs {
-  font-size: 2.2rem;
-  color: var(--text-secondary);
-  margin: 0 1rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.match-links {
-  font-size: 0.9rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: var(--text-muted);
-}
-
-.connect p {
-  text-align: center;
-  margin-bottom: 0.8rem;
-  font-size: 0.95rem;
-}
-
-.highlight {
-  color: var(--text-secondary);
-  font-weight: 600;
-}
-
-.apps {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.apps img {
-  width: 120px;
-  cursor: pointer;
-}
-
-.buy-btn {
-  display: block;
-  text-align: center;
-  background: var(--accent-color);
-  color: var(--text-primary);
-  padding: 0.7rem 1.2rem;
-  border-radius: 25px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: var(--transition-smooth);
-}
-
-.buy-btn:hover {
-  background: var(--accent-hover);
-  box-shadow: 0 0 10px var(--accent-hover);
+  position: absolute;
+  bottom: 150px;
 }
 
 /*News Section*/
@@ -329,7 +219,7 @@ a {
   color: var(--accent-hover);
 }
 
-/*RCB TV Section*/
+/*RCB-TV Section*/
 .rcbtv-section {
   padding: var(--section-padding);
   background-color: var(--bg-primary);
@@ -1049,8 +939,75 @@ a {
       --container-padding: 0 1rem;
     }
     
-    .navbar {
-      padding: 0 1rem;
+    
+    .scroll-offset{
+      scroll-margin-top: 50px;
+    }
+    .hero-container{
+      margin-top: 0px;
+      position: relative;
+    }
+    .hero-container img{
+      width: 100%;
+      height: 300px;
+    }
+
+    .slide-content h1{
+      font-size: 13px;
+      position: absolute;
+      height: 25px;
+      top: 15px;
+      left: 0px;
+      padding: 2px 5px;
+    }
+    .slide-content p{
+      font-size: 10px;
+      padding: 2px 5px;
+      position: absolute;
+      bottom: 5px;
+      left: 0px;
+    }
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 0.5fr));
+      gap: 0.5rem;
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .news-content {
+      padding: 1.5rem;
+    }
+
+    .news-title {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      color: var(--text-primary);
+      margin-bottom: 0.8rem;
+    }
+
+    .news-text {
+      color: var(--text-muted);
+      font-size: 0.5rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .read-more {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: bold;
+      transition: var(--transition-smooth);
+      font-size: 0.8rem;
+    }
+    .tv-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.5rem;
     }
 
     .footer-links {

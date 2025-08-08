@@ -607,7 +607,7 @@ a {
 
 .cafe-right .cafe-gallery img {
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 8px;
     object-fit: cover;
 }
@@ -1011,7 +1011,7 @@ a {
     }
     .tv-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 0.5rem;
     }
 
@@ -1070,6 +1070,11 @@ a {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
       gap: 0.5rem;
+    }
+    .dash-product-name {
+      font-size: 0.8rem;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
     }
     .shop-grid {
       display: grid;

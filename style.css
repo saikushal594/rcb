@@ -891,6 +891,42 @@ a {
     .menu-btn:checked ~ .navbar-right {
         right: 0;
     }
+    .hero-container img{
+      width: 160%;
+      height: 600px;
+    }
+    .hero-container{
+      margin-top: 0px;
+      position: relative;
+    }
+    
+
+    .slide-content h1{
+      font-size: 20px;
+      border-radius: 0px 10px 10px 0px;
+      position: absolute;
+      height: 35px;
+      top: 15px;
+      left: 0px;
+      padding: 2px 5px;
+    }
+    .slide-content p{
+      font-size: 15px;
+      border-radius: 0px 10px 10px 0px;
+      padding: 2px 5px;
+      position: absolute;
+      bottom: 100px;
+      left: 0px;
+    }
+    .cafe-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 2rem;
+      align-items: stretch; 
+      margin: 0 20px;
+    }
+
+
     .footer-nav {
         column-count: 1;
         display: flex;
@@ -949,7 +985,13 @@ a {
     }
     .news-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+      gap: 0.5rem;
+    }
+
+    .tv-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 0.5rem;
     }
 
@@ -958,12 +1000,7 @@ a {
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 0.5rem;
     }
-    .dash-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 0rem;
-    }
-
+    
     .scroll-offset {
         scroll-margin-top: 100px;
     }
